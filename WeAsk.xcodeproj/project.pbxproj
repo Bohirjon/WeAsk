@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		066252D4269230DF0005645C /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066252D3269230DF0005645C /* SignInView.swift */; };
+		066252D62692315C0005645C /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066252D52692315C0005645C /* AuthenticationViewModel.swift */; };
+		066252D8269231B90005645C /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066252D7269231B90005645C /* AuthenticationService.swift */; };
+		066252DA26923B0C0005645C /* AuthenticationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066252D926923B0C0005645C /* AuthenticationResult.swift */; };
 		066FD15D26921FCC00734666 /* WeAskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066FD15C26921FCC00734666 /* WeAskApp.swift */; };
 		066FD15F26921FCC00734666 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066FD15E26921FCC00734666 /* ContentView.swift */; };
 		066FD16126921FCD00734666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 066FD16026921FCD00734666 /* Assets.xcassets */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		066252D3269230DF0005645C /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		066252D52692315C0005645C /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		066252D7269231B90005645C /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		066252D926923B0C0005645C /* AuthenticationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationResult.swift; sourceTree = "<group>"; };
 		066FD15926921FCC00734666 /* WeAsk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeAsk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		066FD15C26921FCC00734666 /* WeAskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeAskApp.swift; sourceTree = "<group>"; };
 		066FD15E26921FCC00734666 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +48,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		066252D2269230CC0005645C /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				066252D3269230DF0005645C /* SignInView.swift */,
+				066252D52692315C0005645C /* AuthenticationViewModel.swift */,
+				066252D7269231B90005645C /* AuthenticationService.swift */,
+				066252D926923B0C0005645C /* AuthenticationResult.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		066FD15026921FCC00734666 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +80,7 @@
 		066FD15B26921FCC00734666 /* WeAsk */ = {
 			isa = PBXGroup;
 			children = (
+				066252D2269230CC0005645C /* Authentication */,
 				066FD15C26921FCC00734666 /* WeAskApp.swift */,
 				066FD15E26921FCC00734666 /* ContentView.swift */,
 				066FD16026921FCD00734666 /* Assets.xcassets */,
@@ -210,8 +230,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				066252D62692315C0005645C /* AuthenticationViewModel.swift in Sources */,
 				066FD15F26921FCC00734666 /* ContentView.swift in Sources */,
 				066FD15D26921FCC00734666 /* WeAskApp.swift in Sources */,
+				066252D4269230DF0005645C /* SignInView.swift in Sources */,
+				066252DA26923B0C0005645C /* AuthenticationResult.swift in Sources */,
+				066252D8269231B90005645C /* AuthenticationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
