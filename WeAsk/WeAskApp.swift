@@ -15,7 +15,7 @@ struct WeAskApp: App {
     }
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SignInView()
         }
     }
 }
