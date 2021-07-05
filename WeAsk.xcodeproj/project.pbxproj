@@ -17,6 +17,7 @@
 		066FD16126921FCD00734666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 066FD16026921FCD00734666 /* Assets.xcassets */; };
 		066FD16426921FCD00734666 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 066FD16326921FCD00734666 /* Preview Assets.xcassets */; };
 		066FD16C2692213400734666 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 066FD16B2692213400734666 /* GoogleService-Info.plist */; };
+		06BE181326931D0D00E705E1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE181226931D0D00E705E1 /* Extensions.swift */; };
 		9781D5D38098B6E181BACCB5 /* Pods_WeAsk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD534359A008D6CFE5B63AF7 /* Pods_WeAsk.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		066FD16326921FCD00734666 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		066FD16526921FCD00734666 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		066FD16B2692213400734666 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		06BE181226931D0D00E705E1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		25BBD4974C1E856DFEAE8B99 /* Pods-WeAsk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeAsk.release.xcconfig"; path = "Target Support Files/Pods-WeAsk/Pods-WeAsk.release.xcconfig"; sourceTree = "<group>"; };
 		D710065CD421C4648311B334 /* Pods-WeAsk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeAsk.debug.xcconfig"; path = "Target Support Files/Pods-WeAsk/Pods-WeAsk.debug.xcconfig"; sourceTree = "<group>"; };
 		FD534359A008D6CFE5B63AF7 /* Pods_WeAsk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeAsk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +85,7 @@
 		066FD15B26921FCC00734666 /* WeAsk */ = {
 			isa = PBXGroup;
 			children = (
+				06BE181126931CFA00E705E1 /* Helpers */,
 				066252D2269230CC0005645C /* Authentication */,
 				066FD15C26921FCC00734666 /* WeAskApp.swift */,
 				066FD15E26921FCC00734666 /* ContentView.swift */,
@@ -100,6 +103,14 @@
 				066FD16326921FCD00734666 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		06BE181126931CFA00E705E1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				06BE181226931D0D00E705E1 /* Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		0DADD060B5088FBB2CFE10CA /* Frameworks */ = {
@@ -233,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06BE181326931D0D00E705E1 /* Extensions.swift in Sources */,
 				066252D62692315C0005645C /* AuthenticationViewModel.swift in Sources */,
 				066FD15F26921FCC00734666 /* ContentView.swift in Sources */,
 				066FD15D26921FCC00734666 /* WeAskApp.swift in Sources */,

@@ -10,4 +10,5 @@ struct AuthenticationResult {
     var isSuccess: Bool
     var userName: String?
     var errorMessage : String?
+    var userUId: String
 }

@@ -8,18 +8,34 @@
 import Foundation
 
 class AuthenticationViewModel: ObservableObject {
+
+    var authenticationService : AuthenticationServiceProtocol
+    
     @Published var email: String = ""
     @Published var password: String = ""
-    @Published var isLogging = false;
+    @Published var isLoading = false;
     
     func login() {
-        isLogging = true
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3, execute: {
-            self.isLogging = false
-        })
+        isLoading = true
+        authenticationService.login(email: email, password: password)
     }
     
     func signUp() {
-        print("sign up")
+        isLoading = true
+        authenticationService.signUp(email: email, password: password)
+    }
+    
+    init(authenticationService: AuthenticationServiceProtocol = AuthenticationService()) {
+        self.authenticationService = authenticationService;
+        self.authenticationService.authenticationDelegate = self
+    }
+}
+
+extension AuthenticationViewModel : AuthenticationDelegate {
+    func onLoginFinished(authenticationResult: AuthenticationResult) {
+        DispatchQueue.main.async {
+            self.isLoading = false
+            print(authenticationResult)
+        }
     }
 }

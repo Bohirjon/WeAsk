@@ -51,7 +51,7 @@ struct SignInView: View {
                         viewModel.login()
                     }
                 }, label: {
-                    if viewModel.isLogging {
+                    if viewModel.isLoading {
                         HStack {
                             ProgressView()
                                 .padding(.horizontal)
@@ -65,7 +65,7 @@ struct SignInView: View {
                 })
                 .foregroundColor(.white)
                 .frame(width: 250, height: 45)
-                .background(viewModel.isLogging ? Color.blue.opacity(0.5) : Color.blue)
+                .background(viewModel.isLoading ? Color.blue.opacity(0.5) : Color.blue)
                 .cornerRadius(13.0)
                 .padding(.vertical, 40)
                 
