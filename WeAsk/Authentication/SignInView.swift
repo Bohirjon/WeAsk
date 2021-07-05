@@ -71,7 +71,8 @@ struct SignInView: View {
                 
                 Text("Don't have an account yet?")
                     .foregroundColor(.gray)
-                NavigationLink("Sign up", destination: SignUpView())
+                NavigationLink("Sign up", destination: SignUpView()
+                                .environmentObject(viewModel))
                 
                 Spacer()
             }

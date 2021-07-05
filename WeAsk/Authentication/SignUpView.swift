@@ -8,8 +8,37 @@
 import SwiftUI
 
 struct SignUpView: View {
+    @EnvironmentObject var viewModel: AuthenticationViewModel
     var body: some View {
-        Text("Hello, World!")
+        HStack {
+            Group {
+                VStack {
+                    Text("Email")
+                        .foregroundColor(.blue.opacity(0.6))
+                    Spacer()
+                }
+                TextField("youname@example.com", text: $viewModel.email)
+                
+                Divider()
+                
+                HStack {
+                    Text("Password")
+                        .foregroundColor(.blue.opacity(0.6))
+                    Spacer()
+                }
+                TextField("your_password", text: $viewModel.password)
+                    
+                    .textFieldStyle(PlainTextFieldStyle())
+                Divider()
+            }
+            .padding(.horizontal)
+            
+            Button (action: {
+                viewModel.signUp()
+            }, label: {
+                Text("Sign up")
+            })
+        }
     }
 }
 

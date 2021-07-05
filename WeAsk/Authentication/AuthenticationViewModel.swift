@@ -18,4 +18,8 @@ class AuthenticationViewModel: ObservableObject {
             self.isLogging = false
         })
     }
+    
+    func signUp() {
+        print("sign up")
+    }
 }
